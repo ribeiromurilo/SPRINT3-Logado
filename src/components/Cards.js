@@ -23,31 +23,31 @@ function Cards() {
               src='images/img-1.jpg'
               text='Danos à bike'
               label='Cobertura'
-              path='/services'
+              path='/entrar'
             />
             <CardItem
               src='images/img-2.jpg'
               text='Substração da bike'
               label='Cobertura'
-              path='/products'
+              path='/entrar'
             />
             <CardItem
               src='images/img-3.jpg'
               text='Acidentes pessoais'
               label='Cobertura'
-              path='/sign-up'
+              path='/entrar'
             />
             <CardItem
               src='images/img-4.jpg'
               text='Garantia internacional'
               label='Cobertura'
-              path='/sign-up'
+              path='/entrar'
             />
             <CardItem
               src='images/img-5.jpg'
               text='Danos por circuito de bikes elétricas'
               label='Cobertura'
-              path='/sign-up'
+              path='/entrar'
             />
           </ul>
         </div>

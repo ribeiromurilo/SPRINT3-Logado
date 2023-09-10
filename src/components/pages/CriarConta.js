@@ -2,24 +2,30 @@ import { useState } from "react";
 import "./CriarConta.css";
 import FormInput from "../FormInput";
 
-const Entrar = () => {
+const CriarConta = () => {
   const [values, setValues] = useState({
-    username: "",
+    nome: "",
     email: "",
-    birthday: "",
-    password: "",
-    confirmPassword: "",
+    nascimento: "",
+    cpf: "",
+    telefone: "",
+    endereço: "",
+    cep: "",
+    estado: "",
+    cidade: "",
+    senha: "",
+    confirmarSenha: "",
   });
 
   const inputs = [
     {
       id: 1,
-      name: "username",
+      name: "nome",
       type: "text",
-      placeholder: "Username",
+      placeholder: "Nome completo",
       errorMessage:
-        "Username should be 3-16 characters and shouldn't include any special character!",
-      label: "Username",
+        "Verifique seu nome!",
+      label: "Nome",
       pattern: "^[A-Za-z0-9]{3,16}$",
       required: true,
     },
@@ -28,35 +34,89 @@ const Entrar = () => {
       name: "email",
       type: "email",
       placeholder: "Email",
-      errorMessage: "It should be a valid email address!",
+      errorMessage: "Insira um endereço de email válido!",
       label: "Email",
       required: true,
     },
     {
       id: 3,
-      name: "birthday",
+      name: "Data de nascimento",
       type: "date",
-      placeholder: "Birthday",
-      label: "Birthday",
+      placeholder: "Data de nascimento",
+      label: "Data de nascimento",
     },
     {
       id: 4,
-      name: "password",
-      type: "password",
-      placeholder: "Password",
-      errorMessage:
-        "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
-      label: "Password",
-      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+      name: "cpf",
+      type: "number",
+      placeholder: "CPF",
+      errorMessage: "O CPF utilizado não existe!",
+      label: "CPF",
       required: true,
     },
     {
       id: 5,
-      name: "confirmPassword",
+      name: "telefone",
+      type: "tel",
+      placeholder: "Telefone",
+      errorMessage: "Este número de telefone já está em uso ou não existe!",
+      label: "Telefone",
+      required: true,
+    },
+    {
+      id: 6,
+      name: "cep",
+      type: "number",
+      placeholder: "CEP",
+      errorMessage: "O CEP não existe!",
+      label: "CEP",
+      required: true,
+    },
+    {
+      id: 7,
+      name: "endereço",
+      type: "text",
+      placeholder: "Endereço",
+      errorMessage: "O endereço está incorreto!",
+      label: "Endereço",
+      required: true,
+    },
+    {
+      id: 8,
+      name: "estado",
+      type: "text",
+      placeholder: "Estado",
+      errorMessage: "Verique se seu estado está correto!",
+      label: "Estado",
+      required: true,
+    },
+    {
+      id: 9,
+      name: "cidade",
+      type: "text",
+      placeholder: "Cidade",
+      errorMessage: "Verifique se sua cidade está correta!",
+      label: "Cidade",
+      required: true,
+    },
+    {
+      id: 10,
+      name: "senha",
       type: "password",
-      placeholder: "Confirm Password",
-      errorMessage: "Passwords don't match!",
-      label: "Confirm Password",
+      placeholder: "Senha",
+      errorMessage:
+        "Sua senha deve conter entre 8-20 caracteres e incluir pelo menos 1 letra, 1 número e 1 caractere especial!",
+      label: "Senha",
+      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+      required: true,
+    },
+    {
+      id: 11,
+      name: "confirmarSenha",
+      type: "password",
+      placeholder: "Confirme sua senha",
+      errorMessage: "Suas senhas não coincidem!",
+      label: "Confirmar senha",
       pattern: values.password,
       required: true,
     },
@@ -71,9 +131,9 @@ const Entrar = () => {
   };
 
   return (
-    <div className="entrar">
+    <div className="criar-conta">
       <form onSubmit={handleSubmit}>
-        <h1>Register</h1>
+        <h1>Crie sua conta</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -82,10 +142,10 @@ const Entrar = () => {
             onChange={onChange}
           />
         ))}
-        <button>Submit</button>
+        <button>Cadastrar</button>
       </form>
     </div>
   );
 };
 
-export default Entrar;
+export default CriarConta;

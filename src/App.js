@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CadastroBike from './components/pages/CadastroBike';
 import Vistoria from './components/pages/Vistoria';
 import Entrar from './components/pages/Entrar';
+import CriarConta from './components/pages/CriarConta';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/cadastro-bike' component={CadastroBike} />
           <Route path='/vistoria' component={Vistoria} />
           <Route path='/entrar' component={Entrar} />
+          <Route path='/criar-conta' component={CriarConta} />
         </Route>
       </Router>
     </>

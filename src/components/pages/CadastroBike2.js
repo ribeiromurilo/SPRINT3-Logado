@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "./CadastroBike2.css";
 
 const CadastroBike2 = () => {
@@ -16,7 +18,9 @@ const CadastroBike2 = () => {
                     <div className="qr-code-container">
                         <img src="/images/qrcode.png" alt="QR Code" className="qr-code" />
                     </div>
-                    <button className="button-enviar">Enviar</button>
+                    <button className="button-enviar">
+                        <Link to='Vistoria' className='enviar'>Enviar</Link>
+                    </button>
                 </div>
             </div>
         </div>

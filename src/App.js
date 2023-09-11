@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CadastroBike from './components/pages/CadastroBike';
-import CadastroBike2 from './components/pages/CadastroBike2'
+import CadastroBike2 from './components/pages/CadastroBike2';
 import Vistoria from './components/pages/Vistoria';
 import Entrar from './components/pages/Entrar';
 import CriarConta from './components/pages/CriarConta';

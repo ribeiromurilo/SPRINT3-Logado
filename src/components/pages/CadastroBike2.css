@@ -53,6 +53,11 @@
     margin-top: 20px;
 }
 
+.enviar {
+    text-decoration: none; 
+    color: inherit;
+}
+
 .qr-code-container {
     text-align: center;
 }

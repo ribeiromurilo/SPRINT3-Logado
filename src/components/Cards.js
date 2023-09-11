@@ -45,7 +45,7 @@ function Cards() {
             />
             <CardItem
               src='images/img-5.jpg'
-              text='Danos por circuito de bikes elétricas'
+              text='Danos por bikes elétricas'
               label='Cobertura'
               path='/entrar'
             />

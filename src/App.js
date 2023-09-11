@@ -8,6 +8,7 @@ import CadastroBike2 from './components/pages/CadastroBike2';
 import Vistoria from './components/pages/Vistoria';
 import Entrar from './components/pages/Entrar';
 import CriarConta from './components/pages/CriarConta';
+import Perfil from './components/pages/Perfil';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/vistoria' component={Vistoria} />
           <Route path='/entrar' component={Entrar} />
           <Route path='/criar-conta' component={CriarConta} />
+          <Route path='/perfil' component={Perfil} />
         </Route>
       </Router>
     </>

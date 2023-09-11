@@ -57,7 +57,9 @@ const Entrar = () => {
           <Link 
           to="/criar-conta">aqui!</Link>
         </p>
-        <button>Entrar</button>
+        <button className="button-entrar">
+          <Link to="/perfil" className="enviar">Entrar</Link>
+        </button>
       </form>
     </div>
   );

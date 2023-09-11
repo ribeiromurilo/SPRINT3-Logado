@@ -19,7 +19,7 @@ const CadastroBike2 = () => {
                         <img src="/images/qrcode.png" alt="QR Code" className="qr-code" />
                     </div>
                     <button className="button-enviar">
-                        <Link to='Vistoria' className='enviar'>Enviar</Link>
+                        <Link to="/vistoria" className="enviar">Enviar</Link>
                     </button>
                 </div>
             </div>

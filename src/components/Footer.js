@@ -13,7 +13,7 @@ function Footer() {
           Murilo Ribeiro Valério da Silva – RM: 550858 <br />
           Sarah Santos Teixeira – RM: 550635
         </p>
-        <a href="https://www.github.com/ribeiromurilo/SPRINT3" target="_blank">Repositório</a>
+        <a href="https://www.github.com/ribeiromurilo/SPRINT3" rel="noreferrer" target="_blank">Repositório</a>
       </section>
     </div>
   );

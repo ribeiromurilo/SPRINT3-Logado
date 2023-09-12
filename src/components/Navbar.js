@@ -54,7 +54,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <li>
+            <li className='nav-bttn'>
               <Link
                 to='/entrar'
                 className='nav-links-mobile'

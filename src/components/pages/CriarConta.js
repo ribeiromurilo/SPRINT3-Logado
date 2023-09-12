@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import "./CriarConta.css";
 import FormInput from "../FormInput";
 
@@ -142,7 +143,9 @@ const CriarConta = () => {
             onChange={onChange}
           />
         ))}
-        <button>Cadastrar</button>
+        <button>
+          <Link to="/perfil" className="enviar">Cadastrar</Link>
+        </button>
       </form>
     </div>
   );

@@ -3,16 +3,18 @@
   background: #fff;
 }
 
-h1 {
+.cards h1 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 15px;
 }
 
-p {
+.cards p {
   text-align: center;
   font-size: 17px;
   margin-left: 150px;
   margin-right: 130px;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 

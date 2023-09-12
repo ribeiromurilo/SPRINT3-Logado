@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.footer-subscription {
+.footer-nomes {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,17 +18,17 @@
   color: #242424;
 }
 
-.footer-subscription > p {
+.footer-nomes > p {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
-.footer-subscription-heading {
+.footer-nomes-heading {
   margin-bottom: 24px;
   font-size: 20px;
 }
 
-.footer-subscription-text {
+.footer-nomes-text {
   margin-bottom: 24px;
   font-size: 20px;
 }

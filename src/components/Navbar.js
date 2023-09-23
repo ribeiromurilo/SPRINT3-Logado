@@ -50,7 +50,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Vistoria
+                Minhas Vistorias
               </Link>
             </li>
 
@@ -64,7 +64,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Entrar</Button>}
+          {button && <Button buttonStyle='btn--outline'>Olá, <strong>Usuário!</strong></Button>}
         </div>
       </nav>
     </>

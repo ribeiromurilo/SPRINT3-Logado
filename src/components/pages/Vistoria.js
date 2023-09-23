@@ -9,8 +9,8 @@ const Vistoria = () => {
         <h1>Vistoria</h1>
         <h2>Olá, <strong>Usuário!</strong></h2>
         <p>Ainda não concluímos o resultado de sua vistoria. <br />
-          Caso não for aprovado, você será permitido à mais 2 tentativas,
-          após o limite será necessário contatar a Porto.
+          Caso recusado, restarão mais 2 tentativas e
+          após o limite excedido <br /> será necessário entrar em contato a Porto.
           Por favor, aguarde por breves atualizações.</p>
       </div>
     </div>
